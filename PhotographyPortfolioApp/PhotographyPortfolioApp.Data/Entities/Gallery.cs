@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotographyPortfolioApp.Shared.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,6 @@ namespace PhotographyPortfolioApp.Data.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public int UserId { get; set; }
+        public GalleryType GalleryType { get; set; }
     }
 }
