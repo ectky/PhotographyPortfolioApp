@@ -8,11 +8,21 @@ namespace PhotographyPortfolioApp.Data.Entities
 {
     internal class Photo : BaseEntity
     {
+        public Photo()
+        {
+            this.Tags = new List<Tag>();
+            this.PhotoGalleries = new List<PhotoGallery>();
+
+
+        }
         public string Description { get; set; }
         public int Pixels { get; set; }
         public int UserId { get; set; }
         public virtual User User { get; set; }
 
         public byte[] PhotoArray { get; set; }
+        public virtual List<Tag> Tags { get; set; }
+        public virtual List<PhotoGallery> PhotoGalleries { get; set; }
+
     }
 }

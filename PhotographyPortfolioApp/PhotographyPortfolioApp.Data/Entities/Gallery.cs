@@ -9,10 +9,16 @@ namespace PhotographyPortfolioApp.Data.Entities
 {
     internal class Gallery : BaseEntity
     {
+        public Gallery()
+        {
+            this.PhotoGalleries = new List<PhotoGallery>();
+        }
         public string Name { get; set; }
         public string Description { get; set; }
         public int UserId { get; set; }
         public virtual User User { get; set; }
         public GalleryType GalleryType { get; set; }
+        public virtual List<PhotoGallery> PhotoGalleries { get; set; }
+
     }
 }
