@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PhotographyPortfolioApp.Data.Entities
 {
-    internal class BaseEntity
+    public class BaseEntity
     {
         public int Id { get; set; }
 

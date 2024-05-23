@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PhotographyPortfolioApp.Data.Entities
 {
-    internal class User : BaseEntity
+    public class User : BaseEntity
     { 
         public User() 
         {
