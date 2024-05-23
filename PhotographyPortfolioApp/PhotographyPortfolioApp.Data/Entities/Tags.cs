@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace PhotographyPortfolioApp.Data.Entities
 {
-    internal class Tags
+    internal class Tags : BaseEntity
     {
         public int PhotoId { get; set; }
         public string Name { get; set; }
+        public virtual Photo Photo { get; set; }
     }
 }
