@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PhotographyPortfolioApp.Data.Entities;
+using PhotographyPortfolioApp.Shared.Enums;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -31,10 +32,45 @@ namespace PhotographyPortfolioApp.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Gallery>()
-                .HasMany(b => b.PhotoGalleries)
-                .WithOne(p => p.UserId)
-                .HasForeignKey(p => p.PhotographerId);
+            modelBuilder.Entity<User>()
+                .HasMany(b => b.UploadedPhotos)
+                .WithOne(p => p.User)
+                .HasForeignKey(p => p.UserId);
+
+            modelBuilder.Entity<User>()
+               .HasMany(u => u.Galleries)
+               .WithOne(u => u.User)
+               .HasForeignKey(p => p.UserId)
+               .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Photo>()
+               .HasMany(u => u.Tags)
+               .WithOne(u => u.Photo)
+               .HasForeignKey(p => p.PhotoId)
+               .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Role>()
+               .HasMany(u => u.Users)
+               .WithOne(u => u.Role)
+               .HasForeignKey(p => p.RoleId)
+               .OnDelete(DeleteBehavior.Restrict);
+
+            foreach (var role in Enum.GetValues(typeof(UserRole)).Cast<UserRole>())
+            {
+                modelBuilder.Entity<Role>().HasData(new Role { Id = (int)role, Name = role.ToString() });
+            }
+
+            modelBuilder.Entity<User>()
+                .HasData(new User
+                {
+                    Id = 1,
+                    Username = "admin",
+                    RoleId = (int)UserRole.Admin,
+                    FirstName = "Admin",
+                    LastName = "User",
+                    Password = PasswordHasher.HashPassword("string")
+
+                });
         }
     }
 }
