@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Data.Entities
+namespace PhotographyPortfolioApp.Shared.Attributes
 {
-    public class BaseEntity
+    public class AutoBindAttribute : Attribute
     {
-        public int Id { get; set; }
 
     }
 }

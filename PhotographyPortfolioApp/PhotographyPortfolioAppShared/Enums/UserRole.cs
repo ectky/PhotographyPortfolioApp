@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Data.Entities
+namespace PhotographyPortfolioApp.Shared.Enums
 {
-    public class BaseEntity
+    public enum UserRole
     {
-        public int Id { get; set; }
-
+        User = 1,
+        Admin
     }
 }

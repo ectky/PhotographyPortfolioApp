@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Data.Entities
+namespace PhotographyPortfolioApp.Shared.Dtos
 {
-    public class Tag : BaseEntity
+    public class TagDto
     {
         public int PhotoId { get; set; }
         public string Name { get; set; }
-        public virtual Photo Photo { get; set; }
+        public PhotoDto Photo { get; set; }
     }
 }

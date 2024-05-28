@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Data.Entities
+namespace PhotographyPortfolioApp.Shared.Dtos
 {
-    public class User : BaseEntity
-    { 
-        public User() 
+    public class UserDto
+    {
+        public UserDto()
         {
-            this.UploadedPhotos = new List<Photo>();
-            this.Galleries = new List<Gallery>();
+            this.UploadedPhotos = new List<PhotoDto>();
+            this.Galleries = new List<GalleryDto>();
         }
         public string Username { get; set; }
         public string Password { get; set; }
@@ -19,10 +20,8 @@ namespace PhotographyPortfolioApp.Data.Entities
         public string LastName { get; set; }
         public int Age { get; set; }
         public int? RoleId { get; set; }
-        public virtual Role Role { get; set; }
-        public virtual List<Photo> UploadedPhotos { get; set; }
-        public virtual List <Gallery> Galleries { get; set; }
-
-       
+        public RoleDto Role { get; set; }
+        public List<PhotoDto> UploadedPhotos { get; set; }
+        public List<GalleryDto> Galleries { get; set; }
     }
 }

@@ -5,20 +5,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Data.Entities
+namespace PhotographyPortfolioApp.Shared.Dtos
 {
-    public class Gallery : BaseEntity
+    public class GalleryDto : BaseModel
     {
-        public Gallery()
+        public GalleryDto() 
         {
-            this.PhotoGalleries = new List<PhotoGallery>();
+            this.PhotoGalleries = new List<PhotoGalleryDto>();
         }
+
         public string Name { get; set; }
         public string Description { get; set; }
         public int UserId { get; set; }
-        public virtual User User { get; set; }
+        public UserDto User { get; set; }
         public GalleryType GalleryType { get; set; }
-        public virtual List<PhotoGallery> PhotoGalleries { get; set; }
+        public List<PhotoGalleryDto> PhotoGalleries { get; set; }
 
     }
 }

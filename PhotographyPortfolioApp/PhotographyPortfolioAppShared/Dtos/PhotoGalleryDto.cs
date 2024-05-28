@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Data.Entities
+namespace PhotographyPortfolioApp.Shared.Dtos
 {
-    public class PhotoGallery : BaseEntity
+    public class PhotoGalleryDto
     {
         public int PhotoId { get; set; }
         public int GalleryId { get; set; }
-        public virtual Photo Photo { get; set; }
-        public virtual Gallery Gallery { get; set; }
+        public PhotoDto Photo { get; set; }
+        public GalleryDto Gallery { get; set; }
     }
 }
