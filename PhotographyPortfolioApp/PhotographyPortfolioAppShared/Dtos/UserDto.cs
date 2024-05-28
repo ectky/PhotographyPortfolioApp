@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PhotographyPortfolioApp.Shared.Dtos
 {
-    public class UserDto
+    public class UserDto : BaseModel
     {
         public UserDto()
         {
