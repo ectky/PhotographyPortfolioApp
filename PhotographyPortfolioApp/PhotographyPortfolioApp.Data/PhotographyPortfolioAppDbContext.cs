@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PhotographyPortfolioApp.Data.Entities;
 using PhotographyPortfolioApp.Shared.Enums;
+using PhotographyPortfolioApp.Shared.Security;
 using System;
 using System.Collections.Generic;
 using System.Data;
