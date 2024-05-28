@@ -16,9 +16,9 @@ namespace PhotographyPortfolioApp.Shared.Dtos
         public string Description { get; set; }
         public int Pixels { get; set; }
         public int UserId { get; set; }
-        public virtual UserDto User { get; set; }
+        public UserDto User { get; set; }
         public byte[] PhotoArray { get; set; }
-        public virtual List<TagDto> Tags { get; set; }
-        public virtual List<PhotoGalleryDto> PhotoGalleries { get; set; }
+        public List<TagDto> Tags { get; set; }
+        public List<PhotoGalleryDto> PhotoGalleries { get; set; }
     }
 }

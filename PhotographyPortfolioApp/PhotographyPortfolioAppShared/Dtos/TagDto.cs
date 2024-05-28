@@ -10,6 +10,6 @@ namespace PhotographyPortfolioApp.Shared.Dtos
     {
         public int PhotoId { get; set; }
         public string Name { get; set; }
-        public virtual PhotoDto Photo { get; set; }
+        public PhotoDto Photo { get; set; }
     }
 }

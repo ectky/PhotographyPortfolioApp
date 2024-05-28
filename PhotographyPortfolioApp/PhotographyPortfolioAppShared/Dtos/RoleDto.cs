@@ -13,6 +13,6 @@ namespace PhotographyPortfolioApp.Shared.Dtos
             this.Users = new List<UserDto>();
         }
         public string Name { get; set; }
-        public virtual List<UserDto> Users { get; set; }
+        public List<UserDto> Users { get; set; }
     }
 }

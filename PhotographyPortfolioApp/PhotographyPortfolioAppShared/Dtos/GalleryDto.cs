@@ -17,9 +17,9 @@ namespace PhotographyPortfolioApp.Shared.Dtos
         public string Name { get; set; }
         public string Description { get; set; }
         public int UserId { get; set; }
-        public virtual UserDto User { get; set; }
+        public UserDto User { get; set; }
         public GalleryType GalleryType { get; set; }
-        public virtual List<PhotoGalleryDto> PhotoGalleries { get; set; }
+        public List<PhotoGalleryDto> PhotoGalleries { get; set; }
 
     }
 }

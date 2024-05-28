@@ -20,8 +20,8 @@ namespace PhotographyPortfolioApp.Shared.Dtos
         public string LastName { get; set; }
         public int Age { get; set; }
         public int? RoleId { get; set; }
-        public virtual RoleDto Role { get; set; }
-        public virtual List<PhotoDto> UploadedPhotos { get; set; }
-        public virtual List<GalleryDto> Galleries { get; set; }
+        public RoleDto Role { get; set; }
+        public List<PhotoDto> UploadedPhotos { get; set; }
+        public List<GalleryDto> Galleries { get; set; }
     }
 }
