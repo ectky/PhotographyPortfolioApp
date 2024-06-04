@@ -13,7 +13,7 @@ namespace PhotographyPortfolioApp.ViewModels
             this.Users = new List<UserDetailsVM>();
         }
         public string Name { get; set; }
-        public virtual List<UserDetailsVM> Users { get; set; }
+        public  List<UserDetailsVM> Users { get; set; }
         
     }
 }

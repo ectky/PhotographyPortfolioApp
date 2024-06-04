@@ -16,7 +16,7 @@ namespace PhotographyPortfolioApp.ViewModels
         public string Description { get; set; }
         public int UserId { get; set; }
         public UserDetailsVM User { get; set; }
-        public virtual List <PhotoGalleryDetailsVM> PhotoGalleries { get; set; }
+        public  List <PhotoGalleryDetailsVM> PhotoGalleries { get; set; }
 
     }
 }
