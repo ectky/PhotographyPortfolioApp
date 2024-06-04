@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace PhotographyPortfolioApp.Data.Entities
 {
-    public class BaseEntity : IBaseEntity
+    public interface IBaseEntity
     {
         public int Id { get; set; }
-
     }
 }
