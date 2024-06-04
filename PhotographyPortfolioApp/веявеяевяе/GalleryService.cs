@@ -11,12 +11,11 @@ using System.Threading.Tasks;
 namespace PhotographyPortfolioApp.Services
 {
     [AutoBind]
-    public class RoleService : BaseCrudService<RoleDto, IRoleRepository>, IRoleService
+    public class GalleryService : BaseCrudService<GalleryDto, IGalleryRepository>, IGalleryService
     {
-        public RoleService(IRoleRepository repository) : base(repository)
+        public GalleryService(IGalleryRepository repository) : base(repository)
         {
 
         }
     }
 }
-
