@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographyPortfolioApp", "PhotographyPortfolioApp\PhotographyPortfolioApp.csproj", "{7F9F7134-87B0-4650-B1C0-1CF24176A77A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographyPortfolioApp.Data", "PhotographyPortfolioApp.Data\PhotographyPortfolioApp.Data.csproj", "{4EEFF97F-2CD5-4E91-90B5-85190960CC05}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographyPortfolioApp.Shared", "PhotographyPortfolioAppShared\PhotographyPortfolioApp.Shared.csproj", "{A967A96A-547C-4DA1-97F0-354B83AE2359}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographyPortfolioApp.Service", "PhotographyPortfolioApp.Service\PhotographyPortfolioApp.Service.csproj", "{9C379313-3A95-449D-B197-563FCB9E196E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyPortfolioApp.MVC", "PhotographyPortfolioApp.MVC\PhotographyPortfolioApp.MVC.csproj", "{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F9F7134-87B0-4650-B1C0-1CF24176A77A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F9F7134-87B0-4650-B1C0-1CF24176A77A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F9F7134-87B0-4650-B1C0-1CF24176A77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F9F7134-87B0-4650-B1C0-1CF24176A77A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4EEFF97F-2CD5-4E91-90B5-85190960CC05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4EEFF97F-2CD5-4E91-90B5-85190960CC05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EEFF97F-2CD5-4E91-90B5-85190960CC05}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{9C379313-3A95-449D-B197-563FCB9E196E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C379313-3A95-449D-B197-563FCB9E196E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C379313-3A95-449D-B197-563FCB9E196E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

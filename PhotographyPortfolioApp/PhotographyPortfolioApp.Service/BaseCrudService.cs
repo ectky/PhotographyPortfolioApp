@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Services
+namespace PhotographyPortfolioApp.Service
 {
     public abstract class BaseCrudService<TModel, TRepository> : IBaseCrudService<TModel, TRepository>
         where TModel : BaseModel
@@ -16,7 +16,7 @@ namespace PhotographyPortfolioApp.Services
         protected readonly TRepository _repository;
         protected BaseCrudService(TRepository repository)
         {
-            this._repository = repository;
+            _repository = repository;
         }
         public virtual async Task SaveAsync(TModel model)
         {
@@ -25,15 +25,15 @@ namespace PhotographyPortfolioApp.Services
                 throw new ArgumentNullException(nameof(model));
             }
 
-            await this._repository.SaveAsync(model);
+            await _repository.SaveAsync(model);
         }
         public virtual Task DeleteAsync(int id)
-            => this._repository.DeleteAsync(id);
+            => _repository.DeleteAsync(id);
         public virtual Task<TModel> GetByIdIfExistsAsync(int id)
-            => this._repository.GetByIdAsync(id);
+            => _repository.GetByIdAsync(id);
         public virtual Task<IEnumerable<TModel>> GetWithPaginationAsync(int pageSize, int pageNumber)
-            => this._repository.GetWithPaginationAsync(pageSize, pageNumber);
+            => _repository.GetWithPaginationAsync(pageSize, pageNumber);
         public Task<bool> ExistsByIdAsync(int id)
-            => this._repository.ExistsByIdAsync(id);
+            => _repository.ExistsByIdAsync(id);
     }
 }

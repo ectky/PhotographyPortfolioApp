@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Services
+namespace PhotographyPortfolioApp.Service
 {
     [AutoBind]
     public class TagService : BaseCrudService<TagDto, ITagRepository>, ITagService

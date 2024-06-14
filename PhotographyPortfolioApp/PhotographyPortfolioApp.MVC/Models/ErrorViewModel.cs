@@ -1,4 +1,4 @@
-namespace PhotographyPortfolioApp.Models
+namespace PhotographyPortfolioApp.MVC.Models
 {
     public class ErrorViewModel
     {
