@@ -1,0 +1,185 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Auth\Login.cshtml" />
+    <Content Remove="Views\Auth\Register.cshtml" />
+    <Content Remove="Views\Gallery\Create.cshtml" />
+    <Content Remove="Views\Gallery\Delete.cshtml" />
+    <Content Remove="Views\Gallery\Details.cshtml" />
+    <Content Remove="Views\Gallery\Edit.cshtml" />
+    <Content Remove="Views\Gallery\List.cshtml" />
+    <Content Remove="Views\Photo\Create.cshtml" />
+    <Content Remove="Views\Photo\Delete.cshtml" />
+    <Content Remove="Views\Photo\Details.cshtml" />
+    <Content Remove="Views\Photo\Edit.cshtml" />
+    <Content Remove="Views\Photo\List.cshtml" />
+    <Content Remove="Views\Role\Create.cshtml" />
+    <Content Remove="Views\Role\Delete.cshtml" />
+    <Content Remove="Views\Role\Details.cshtml" />
+    <Content Remove="Views\Role\Edit.cshtml" />
+    <Content Remove="Views\Role\List.cshtml" />
+    <Content Remove="Views\Shared\Error.cshtml" />
+    <Content Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <Content Remove="Views\Tag\Create.cshtml" />
+    <Content Remove="Views\Tag\Delete.cshtml" />
+    <Content Remove="Views\Tag\Details.cshtml" />
+    <Content Remove="Views\Tag\Edit.cshtml" />
+    <Content Remove="Views\Tag\List.cshtml" />
+    <Content Remove="Views\User\Create.cshtml" />
+    <Content Remove="Views\User\Delete.cshtml" />
+    <Content Remove="Views\User\Details.cshtml" />
+    <Content Remove="Views\User\Edit.cshtml" />
+    <Content Remove="Views\User\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Auth\Login.cshtml" />
+    <None Include="Views\Auth\Register.cshtml" />
+    <None Include="Views\Gallery\Create.cshtml" />
+    <None Include="Views\Gallery\Delete.cshtml" />
+    <None Include="Views\Gallery\Details.cshtml" />
+    <None Include="Views\Gallery\Edit.cshtml" />
+    <None Include="Views\Gallery\List.cshtml" />
+    <None Include="Views\Photo\Create.cshtml" />
+    <None Include="Views\Photo\Delete.cshtml" />
+    <None Include="Views\Photo\Details.cshtml" />
+    <None Include="Views\Photo\Edit.cshtml" />
+    <None Include="Views\Photo\List.cshtml" />
+    <None Include="Views\Role\Create.cshtml" />
+    <None Include="Views\Role\Delete.cshtml" />
+    <None Include="Views\Role\Details.cshtml" />
+    <None Include="Views\Role\Edit.cshtml" />
+    <None Include="Views\Role\List.cshtml" />
+    <None Include="Views\Shared\Error.cshtml" />
+    <None Include="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <None Include="Views\Tag\Create.cshtml" />
+    <None Include="Views\Tag\Delete.cshtml" />
+    <None Include="Views\Tag\Details.cshtml" />
+    <None Include="Views\Tag\Edit.cshtml" />
+    <None Include="Views\Tag\List.cshtml" />
+    <None Include="Views\User\Create.cshtml" />
+    <None Include="Views\User\Delete.cshtml" />
+    <None Include="Views\User\Details.cshtml" />
+    <None Include="Views\User\Edit.cshtml" />
+    <None Include="Views\User\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Photo\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Auth\Login.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Auth\Register.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Photo\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Photo\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Photo\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Photo\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Photo\List.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Role\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Role\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Role\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Role\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Role\List.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\User\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\User\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\User\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\User\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\User\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Photo\Delete.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Photo\Details.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Photo\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Photo\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Role\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Role\Delete.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Role\Details.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Role\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Role\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Auth\Login.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Auth\Register.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\User\Create.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\User\Delete.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\User\Details.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\User\Edit.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\User\List.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Owin.Security.Jwt" Version="4.2.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhotographyPortfolioApp.Data\PhotographyPortfolioApp.Data.csproj" />
+    <ProjectReference Include="..\PhotographyPortfolioApp.Service\PhotographyPortfolioApp.Service.csproj" />
+    <ProjectReference Include="..\PhotographyPortfolioAppShared\PhotographyPortfolioApp.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

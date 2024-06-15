@@ -1,0 +1,43 @@
+﻿@model PhotographyPortfolioApp.ViewModels.PetDetailsVM
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <h4>Products</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pixels)
+        </dt>
+        <dt>
+            @Html.DisplayFor(model => model.Pixels)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhotoArray)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhotoArray)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "List")
+</p>

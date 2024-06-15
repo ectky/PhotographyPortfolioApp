@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using PhotographyPortfolioApp.Data.Entities;
+using PhotographyPortfolioApp.Shared.Attributes;
 using PhotographyPortfolioApp.Shared.Dtos;
 using PhotographyPortfolioApp.Shared.Repos.Contracts;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace PhotographyPortfolioApp.Data.Repos
 {
+    [AutoBind]
     public class GalleryRepository : BaseRepository<Gallery, GalleryDto>, IGalleryRepository
     {
         public GalleryRepository(PhotographyPortfolioAppDbContext context, IMapper mapper) : base(context, mapper)

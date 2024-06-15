@@ -1,5 +1,4 @@
-﻿using PhotographyPortfolioApp.Services;
-using PhotographyPortfolioApp.Shared.Attributes;
+﻿using PhotographyPortfolioApp.Shared.Attributes;
 using PhotographyPortfolioApp.Shared.Dtos;
 using PhotographyPortfolioApp.Shared.Repos.Contracts;
 using PhotographyPortfolioApp.Shared.Service;
@@ -9,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Services
+namespace PhotographyPortfolioApp.Service
 {
     [AutoBind]
     public class PhotoGalleryService : BaseCrudService<PhotoGalleryDto, IPhotoGalleryRepository>, IPhotoGalleryService
