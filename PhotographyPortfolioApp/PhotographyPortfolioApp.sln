@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographyPortfolioApp.Sha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographyPortfolioApp.Service", "PhotographyPortfolioApp.Service\PhotographyPortfolioApp.Service.csproj", "{9C379313-3A95-449D-B197-563FCB9E196E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyPortfolioApp.MVC", "PhotographyPortfolioApp.MVC\PhotographyPortfolioApp.MVC.csproj", "{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotographyPortfolioApp.MVC", "PhotographyPortfolioApp.MVC\PhotographyPortfolioApp.MVC.csproj", "{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotographyPortfolioApp.Tests", "PhotographyPortfolioApp.Tests\PhotographyPortfolioApp.Tests.csproj", "{FDDE88FE-A469-4C9D-AA4C-B2F7FA5E7816}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA18C2A-0A8B-45F6-AA67-B029B08AD365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDE88FE-A469-4C9D-AA4C-B2F7FA5E7816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDE88FE-A469-4C9D-AA4C-B2F7FA5E7816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDE88FE-A469-4C9D-AA4C-B2F7FA5E7816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDE88FE-A469-4C9D-AA4C-B2F7FA5E7816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
