@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PhotographyPortfolioApp.ViewModels.BreedDetailsVM>
+﻿@model IEnumerable<PhotographyPortfolioApp.ViewModels.GalleryDetailsVM>
 
  @{ViewBag.Title = "Index";}
 
@@ -14,9 +14,6 @@
          <th>
              @Html.DisplayNameFor(model => model.Description)
          </th>
-         <th>
-            @Html.DisplayNameFor(model => model.PhotoGalleries)
-         </th>
          <th>Actions</th>
      </tr>
      @foreach (var item in Model)
@@ -27,9 +24,6 @@
                 </td>
                 <td>
                 @Html.DisplayNameFor(modelItem => item.Description)
-                </td>
-                <td>
-                @Html.DisplayNameFor(modelItem => item.PhotoGalleries.Count)
                 </td>
                 <td>
                     @Html.ActionLink("Edit","Edit",new{id = item.Id}) |

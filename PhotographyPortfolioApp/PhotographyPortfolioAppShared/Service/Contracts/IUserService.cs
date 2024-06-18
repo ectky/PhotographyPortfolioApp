@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Shared.Service
+namespace PhotographyPortfolioApp.Shared.Service.Contracts
 {
     public interface IUserService : IBaseCrudService<UserDto, IUserRepository>
     {
-
+        Task<bool> CanUserLoginAsync(string username, string password);
+        Task<UserDto> GetByUsernameAsync(string username);
     }
 }
-

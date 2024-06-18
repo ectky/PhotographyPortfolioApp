@@ -1,4 +1,4 @@
-﻿@model PhotographyPortfolioApp.ViewModels.BreedEditVM
+﻿@model PhotographyPortfolioApp.ViewModels.GalleryEditVM
 
 @{
     ViewBag.Title = "Edit";
@@ -37,7 +37,7 @@
             <div class="col-md-10">
                 @Html.DropDownListFor(model => model.UserId, Model.UserList, "Choose a user...",
                          new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.RoleId)
+                @Html.ValidationMessageFor(model => model.UserId)
             </div>
         </div>
 

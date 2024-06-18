@@ -2,6 +2,7 @@
 using PhotographyPortfolioApp.Shared.Dtos;
 using PhotographyPortfolioApp.Shared.Repos.Contracts;
 using PhotographyPortfolioApp.Shared.Service;
+using PhotographyPortfolioApp.Shared.Service.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,11 @@ namespace PhotographyPortfolioApp.Service
         public RoleService(IRoleRepository repository) : base(repository)
         {
 
+        }
+
+        public Task<RoleDto?> GetByNameIfExistsAsync(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

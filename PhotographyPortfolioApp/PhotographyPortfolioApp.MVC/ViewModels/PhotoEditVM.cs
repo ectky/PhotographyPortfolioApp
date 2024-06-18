@@ -15,8 +15,9 @@ namespace PhotographyPortfolioApp.ViewModels
         [Required]
         [DisplayName("User")]
         public int UserId { get; set; }
-        public IEnumerable <SelectListItem> UserList { get; set; }  
+        public IEnumerable <SelectListItem> UserList { get; set; }
 
-        
-    }
+
+
+	}
 }

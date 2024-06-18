@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PhotographyPortfolioApp.Shared.Service
+namespace PhotographyPortfolioApp.Shared.Service.Contracts
 {
-    public interface ITagService : IBaseCrudService<TagDto, ITagRepository>
+    public interface IGalleryService : IBaseCrudService<GalleryDto, IGalleryRepository>
     {
 
-    }
+	}
 }
 
