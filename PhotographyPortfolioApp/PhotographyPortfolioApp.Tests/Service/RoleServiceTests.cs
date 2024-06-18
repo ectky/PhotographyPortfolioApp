@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PetShelter.Test.Service
+namespace PhotographyPortfolioApp.Test.Service
 {
     public class RoleServiceTests
     {

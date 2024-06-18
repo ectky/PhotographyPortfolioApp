@@ -20,6 +20,10 @@ namespace PhotographyPortfolioApp.Data
         public DbSet<Tag> Tags { get; set; }
         public DbSet<User> Users { get; set; }
 
+        public PhotographyPortfolioAppDbContext()
+        {
+        }
+
         public PhotographyPortfolioAppDbContext(DbContextOptions<PhotographyPortfolioAppDbContext> options) : base(options)
         {
 

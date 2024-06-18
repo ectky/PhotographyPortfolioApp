@@ -28,7 +28,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PhotographyPortfolioApp.Data\PhotographyPortfolioApp.Data.csproj" />
-    <ProjectReference Include="..\PhotographyPortfolioApp.MVC\PhotographyPortfolioApp.MVC.csproj" />
     <ProjectReference Include="..\PhotographyPortfolioApp.Service\PhotographyPortfolioApp.Service.csproj" />
     <ProjectReference Include="..\PhotographyPortfolioAppShared\PhotographyPortfolioApp.Shared.csproj" />
   </ItemGroup>

@@ -41,6 +41,7 @@ namespace PhotographyPortfolioApp.Tests.Repos
             // Assert
             Assert.That(result, Is.EqualTo(model.Object));
         }
+        [Test]
         public void MapToEntity_ValidEntity_ReturnsMapToEntity()
         {
             //Arrange
