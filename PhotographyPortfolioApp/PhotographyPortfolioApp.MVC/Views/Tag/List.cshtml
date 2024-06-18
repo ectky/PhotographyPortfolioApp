@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<PhotographyPortfolioApp.ViewModels.TagDetailsVM>
 
- @{ViewBag.Title = "Index";}
+ @{ViewBag.Title = "List";}
 
  <h2>Index</h2>
  <p>
@@ -23,13 +23,13 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayNameFor(modelItem => item.Name)
+                    @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                @Html.DisplayNameFor(modelItem => item.PhotoId)
+                @Html.DisplayFor(modelItem => item.PhotoId)
                 </td>
                 <td>
-                @Html.DisplayNameFor(modelItem => item.Photo)
+                @Html.DisplayFor(modelItem => item.Photo)
                 </td>
                 <td>
                     @Html.ActionLink("Edit","Edit",new{id = item.Id}) |

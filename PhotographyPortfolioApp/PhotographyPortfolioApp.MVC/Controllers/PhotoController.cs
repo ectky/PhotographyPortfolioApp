@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using PhotographyPortfolioApp.Service;
 using PhotographyPortfolioApp.Shared.Dtos;
 using PhotographyPortfolioApp.Shared.Repos.Contracts;
@@ -12,9 +13,18 @@ namespace PhotographyPortfolioApp.MVC.Controllers
 	[Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme, Roles = "Admin, Employee, User")]
 	public class PhotoController : BaseCrudController<PhotoDto, IPhotoRepository, IPhotoService, PhotoEditVM, PhotoDetailsVM>
 	{
-		public PhotoController(IPhotoService service, IMapper mapper) : base(service, mapper)
+        private readonly IUserService _userService;
+        public PhotoController(IPhotoService service, IMapper mapper, IUserService userService) : base(service, mapper)
 		{
+            _userService = userService;
+        }
+        protected override async Task<PhotoEditVM> PrePopulateVMAsync(PhotoEditVM editVM)
+        {
 
-		}
-	}
+            editVM.UserList = (await _userService.GetAllAsync())
+            .Select(x => new SelectListItem(x.Username, x.Id.ToString()));
+
+            return editVM;
+        }
+    }
 }
