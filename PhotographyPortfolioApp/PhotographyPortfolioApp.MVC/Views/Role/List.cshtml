@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<PhotographyPortfolioApp.ViewModels.RoleDetailsVM>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "List";
 }
 
 <h2>Index</h2>
@@ -20,7 +20,7 @@
     {
         <tr>
             <td>
-                @Html.DisplayNameFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.Name)
             </td>
 
             <td>
@@ -31,4 +31,4 @@
         </tr>
     }
 </table>
-}
+

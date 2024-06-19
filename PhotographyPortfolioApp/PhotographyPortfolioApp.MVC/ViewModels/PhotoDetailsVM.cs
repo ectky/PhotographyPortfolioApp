@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,5 +21,6 @@ namespace PhotographyPortfolioApp.ViewModels
 
         public List<TagDetailsVM> Tags { get; set; }
         public List<PhotoGalleryDetailsVM> PhotoGalleries { get; set; }
-    }
+
+	}
 }

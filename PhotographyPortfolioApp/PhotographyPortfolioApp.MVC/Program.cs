@@ -5,6 +5,7 @@ using PhotographyPortfolioApp.Service;
 using PhotographyPortfolioApp.Data.Repos;
 using PhotographyPortfolioApp.MVC;
 using PhotographyPortfolioApp.Shared.Extentions;
+using EntityFrameworkCore.UseRowNumberForPaging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,7 +14,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<PhotographyPortfolioAppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"]);
+options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnection"], 
+                r => r.UseRowNumberForPaging());
 });
 
 builder.Services.AutoBind(typeof(PhotoService).Assembly);

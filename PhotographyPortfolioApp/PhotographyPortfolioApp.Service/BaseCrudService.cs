@@ -1,6 +1,7 @@
 ﻿using PhotographyPortfolioApp.Shared.Dtos;
 using PhotographyPortfolioApp.Shared.Repos.Contracts;
 using PhotographyPortfolioApp.Shared.Service;
+using PhotographyPortfolioApp.Shared.Service.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,10 @@ namespace PhotographyPortfolioApp.Service
             => _repository.GetByIdAsync(id);
         public virtual Task<IEnumerable<TModel>> GetWithPaginationAsync(int pageSize, int pageNumber)
             => _repository.GetWithPaginationAsync(pageSize, pageNumber);
+        public virtual Task<IEnumerable<TModel>> GetAllAsync()
+            => _repository.GetAllAsync();
         public Task<bool> ExistsByIdAsync(int id)
             => _repository.ExistsByIdAsync(id);
+
     }
 }

@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<PhotographyPortfolioApp.ViewModels.UserDetailsVM>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "User";
 }
 
 <h2>Index</h2>
@@ -37,22 +37,22 @@
     {
         <tr>
             <td>
-                @Html.DisplayNameFor(modelItem => item.Username)
+                @Html.DisplayFor(modelItem => item.Username)
             </td>
             <td>
-                @Html.DisplayNameFor(modelItem => item.Password)
+                @Html.DisplayFor(modelItem => item.Password)
             </td>
             <td>
-                @Html.DisplayNameFor(modelItem => item.FirstName)
+                @Html.DisplayFor(modelItem => item.FirstName)
             </td>
             <td>
-                @Html.DisplayNameFor(modelItem => item.LastName)
+                @Html.DisplayFor(modelItem => item.LastName)
             </td>
             <td>
-                @Html.DisplayNameFor(modelItem => item.UploadedPhotos.Count)
+                @Html.DisplayFor(modelItem => item.UploadedPhotos.Count)
             </td>
             <td>
-                @Html.DisplayNameFor(modelItem => item.Galleries.Count)
+                @Html.DisplayFor(modelItem => item.Galleries.Count)
             </td>
 
             <td>
