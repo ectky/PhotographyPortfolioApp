@@ -9,6 +9,7 @@
     <h4>Products</h4>
     <hr />
     <dl class="dl-horizontal">
+        <img src="data:image;base64,@System.Convert.ToBase64String(Model.PhotoArray)" style="width: 100px; height: 100px;" />
         <dt>
             @Html.DisplayNameFor(model => model.Description)
         </dt>
