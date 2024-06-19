@@ -33,16 +33,6 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PhotoArray, new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.PhotoArray)
-                @Html.ValidationMessageFor(model => model.PhotoArray)
-            </div>
-        </div>
-
-        
-
-        <div class="form-group">
             @Html.LabelFor(model => model.UserId, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownListFor(model => model.UserId, Model.UserList, "Choose a user...",

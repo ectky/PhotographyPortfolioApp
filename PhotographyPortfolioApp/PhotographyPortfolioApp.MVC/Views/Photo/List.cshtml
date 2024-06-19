@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<PhotographyPortfolioApp.ViewModels.PhotoDetailsVM>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "List";
 }
 
-<h2>Index</h2>
+<h2>Photo</h2>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -16,31 +16,18 @@
         <th>
             @Html.DisplayNameFor(model => model.Pixels)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PhotoArray)
-        </th>
         
-        <th>
-            @Html.DisplayNameFor(model => model.UserId)
-        </th>
         <th>Actions</th>
     </tr>
     @foreach (var item in Model)
     {
         <tr>
             <td>
-                @Html.DisplayNameFor(modelItem => item.Description)
+                @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.DisplayNameFor(modelItem => item.Pixels)
+                @Html.DisplayFor(modelItem => item.Pixels)
             </td>
-            <td>
-                @Html.DisplayNameFor(modelItem => item.PhotoArray)
-            </td>
-            <td>
-                @Html.DisplayNameFor(modelItem => item.UserId)
-            </td>
-            
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                 @Html.ActionLink("Details", "Details", new { id = item.Id }) |
