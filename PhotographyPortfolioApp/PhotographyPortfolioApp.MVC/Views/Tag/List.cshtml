@@ -2,7 +2,7 @@
 
  @{ViewBag.Title = "List";}
 
- <h2>Index</h2>
+ <h2>Tag</h2>
  <p>
      @Html.ActionLink("Create New","Create")
  </p>
@@ -10,9 +10,6 @@
      <tr>
          <th>
              @Html.DisplayNameFor(model => model.Name)
-         </th>
-         <th>
-            @Html.DisplayNameFor(model => model.PhotoId)
          </th>
          <th>
             @Html.DisplayNameFor(model => model.Photo)
@@ -26,10 +23,7 @@
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                @Html.DisplayFor(modelItem => item.PhotoId)
-                </td>
-                <td>
-                @Html.DisplayFor(modelItem => item.Photo)
+                @Html.DisplayFor(modelItem => item.Photo.Description)
                 </td>
                 <td>
                     @Html.ActionLink("Edit","Edit",new{id = item.Id}) |

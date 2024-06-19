@@ -1,8 +1,10 @@
 ﻿@model IEnumerable<PhotographyPortfolioApp.ViewModels.GalleryDetailsVM>
 
- @{ViewBag.Title = "Index";}
+@{
+    ViewBag.Title = "List";
+}
 
- <h2>Index</h2>
+<h2>Gallery</h2>
  <p>
      @Html.ActionLink("Create New","Create")
  </p>
@@ -20,10 +22,10 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayNameFor(modelItem => item.Name)
+                    @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                @Html.DisplayNameFor(modelItem => item.Description)
+                @Html.DisplayFor(modelItem => item.Description)
                 </td>
                 <td>
                     @Html.ActionLink("Edit","Edit",new{id = item.Id}) |
