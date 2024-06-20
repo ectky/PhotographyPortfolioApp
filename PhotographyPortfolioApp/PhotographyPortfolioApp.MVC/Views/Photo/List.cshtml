@@ -6,10 +6,12 @@
 
 <h2>Photo</h2>
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", null, htmlAttributes: new { @style = "border: white 1px solid; margin-top: 10px", @class = "btn btn-default" })
 </p>
 <table class="table">
     <tr>
+        <th>
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.Description)
         </th>
@@ -32,9 +34,9 @@
                 @Html.DisplayFor(modelItem => item.Pixels)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, htmlAttributes: new { @style = "border: white 1px solid; margin-top: 10px", @class = "btn btn-default" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }, htmlAttributes: new { @style = "border: white 1px solid; margin-top: 10px", @class = "btn btn-default" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, htmlAttributes: new { @style = "border: white 1px solid; margin-top: 10px", @class = "btn btn-default" }) |  
             </td>
         </tr>
     }
