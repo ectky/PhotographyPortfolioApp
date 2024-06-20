@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Web;
 
 namespace PhotographyPortfolioApp.ViewModels
 {
@@ -12,6 +13,8 @@ namespace PhotographyPortfolioApp.ViewModels
         public int Pixels { get; set; }
         [Required]
         public byte[] PhotoArray { get; set; }
+        public IFormFile PhotoFile { get; set; }
+
         [Required]
         [DisplayName("User")]
         public int UserId { get; set; }

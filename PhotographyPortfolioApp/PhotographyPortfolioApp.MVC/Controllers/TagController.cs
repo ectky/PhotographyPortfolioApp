@@ -13,16 +13,16 @@ namespace PhotographyPortfolioApp.MVC.Controllers
 	[Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme, Roles = "Admin, Employee, User")]
 	public class TagController : BaseCrudController<TagDto, ITagRepository, ITagService, TagEditVM, TagDetailsVM>
 	{
-        private readonly IUserService _userService;
-        public TagController(ITagService service, IMapper mapper, IUserService userService) : base(service, mapper)
+        private readonly IPhotoService _photoService;
+        public TagController(ITagService service, IMapper mapper, IPhotoService photoService) : base(service, mapper)
 		{
-            _userService = userService;
+            _photoService = photoService;
         }
         protected override async Task<TagEditVM> PrePopulateVMAsync(TagEditVM editVM)
         {
 
-            editVM.PhotoList = (await _userService.GetAllAsync())
-            .Select(x => new SelectListItem(x.Username, x.Id.ToString()));
+            editVM.PhotoList = (await _photoService.GetAllAsync())
+            .Select(x => new SelectListItem(x.Description, x.Id.ToString()));
 
             return editVM;
         }

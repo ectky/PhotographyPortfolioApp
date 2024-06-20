@@ -8,7 +8,7 @@
 }
 
 <h2>Create</h2>
-@using (Html.BeginForm())
+@using (Html.BeginForm("Create", "Photo", FormMethod.Post, new { id = "FormCreate", enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
     <div class="form-horizontal">
@@ -29,6 +29,14 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Pixels)
                 @Html.ValidationMessageFor(model => model.Pixels)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PhotoFile, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.PhotoFile)
+                @Html.ValidationMessageFor(model => model.PhotoFile)
             </div>
         </div>
 

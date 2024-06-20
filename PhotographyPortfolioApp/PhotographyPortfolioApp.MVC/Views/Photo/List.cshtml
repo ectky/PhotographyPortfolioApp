@@ -23,6 +23,9 @@
     {
         <tr>
             <td>
+                <img src="data:image;base64,@System.Convert.ToBase64String(item.PhotoArray)" style="width: 70px; height: 70px;" />
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
