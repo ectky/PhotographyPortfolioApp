@@ -25,6 +25,11 @@ namespace PhotographyPortfolioApp.Data
 
         }
 
+        public PhotographyPortfolioAppDbContext()
+        {
+                
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
